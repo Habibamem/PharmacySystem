@@ -3,7 +3,7 @@ import java.util.Scanner;
 
 public class Pharmacy {
 
-    // I used 3 lists to store medicine data
+   
     static ArrayList<String> medicineNames = new ArrayList<String>();
     static ArrayList<Double> medicinePrices = new ArrayList<Double>();
     static ArrayList<Integer> medicineQuantities = new ArrayList<Integer>();
@@ -11,7 +11,7 @@ public class Pharmacy {
 
     public static void main(String[] args) {
 
-        // adding medicines
+       //add the medicine 
         medicineNames.add("Paracetamol");
         medicinePrices.add(2.5);1
         medicineQuantities.add(100);
@@ -98,7 +98,7 @@ public class Pharmacy {
             return;
         }
 
-        // sell
+        // ahseb el cost ll total medicines
         double total = qty * medicinePrices.get(index);
         int newQty = medicineQuantities.get(index) - qty;
         medicineQuantities.set(index, newQty);
@@ -122,4 +122,5 @@ public class Pharmacy {
         }
     }
 }
+
 
